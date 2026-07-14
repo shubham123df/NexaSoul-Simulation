@@ -4,12 +4,12 @@
 
 @layer base {
   body {
-    @apply bg-brand-ink text-white font-body overflow-hidden;
+    @apply bg-[#f7faff] text-[#0b1740] font-body overflow-hidden;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-brand-blue via-brand-violet to-brand-cyan bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#315cf4] via-[#7458f5] to-[#04bfd5] bg-clip-text text-transparent;
   }
 }

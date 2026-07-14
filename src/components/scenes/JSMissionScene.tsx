@@ -19,20 +19,20 @@ export default function JSMissionScene() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-ink px-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#f7faff] px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         className="max-w-2xl w-full"
       >
-        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
-          <h2 className="text-3xl font-display font-bold text-white mb-2">
+        <div className="bg-white backdrop-blur-lg rounded-2xl p-8 border border-[#dbe5fb] shadow-lg">
+          <h2 className="text-3xl font-display font-bold text-[#0b1740] mb-2">
             Mission 3: JavaScript Interactivity
           </h2>
-          <p className="text-brand-sub mb-6">Make your webpage interactive</p>
+          <p className="text-[#5f6e8d] mb-6">Make your webpage interactive</p>
 
           {/* Interactive Demo */}
-          <div className="bg-gray-900 rounded-xl p-6 mb-6">
+          <div className="bg-[#0b1740] rounded-xl p-6 mb-6">
             <div className="text-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -41,24 +41,24 @@ export default function JSMissionScene() {
                 disabled={!fixed}
                 className={`px-6 py-3 rounded-lg font-bold ${
                   fixed
-                    ? 'bg-gradient-to-r from-brand-blue to-brand-violet text-white'
-                    : 'bg-gray-700 text-gray-500 cursor-not-allowed'
+                    ? 'bg-gradient-to-r from-[#315cf4] to-[#7458f5] text-white'
+                    : 'bg-[#5f6e8d] text-[#5f6e8d] cursor-not-allowed'
                 }`}
               >
                 {fixed ? 'Click Me! ✓' : 'Button (Not Working)'}
               </motion.button>
-              <p className="text-gray-400 text-sm mt-4">
+              <p className="text-[#5f6e8d] text-sm mt-4">
                 {fixed ? 'Fixed! Button now responds to clicks' : 'Button is not responding - fix the JavaScript'}
               </p>
             </div>
           </div>
 
           {/* Code Preview */}
-          <div className="bg-gray-800 rounded-xl p-4 mb-6 font-mono text-sm">
-            <div className="text-gray-400">// Before:</div>
+          <div className="bg-[#1a2755] rounded-xl p-4 mb-6 font-mono text-sm">
+            <div className="text-[#5f6e8d]">// Before:</div>
             <div className="text-red-400">button.onclick = null;</div>
-            <div className="text-gray-400 mt-2">// After:</div>
-            <div className="text-green-400">button.onclick = () {'>'} alert('Hello!');</div>
+            <div className="text-[#5f6e8d] mt-2">// After:</div>
+            <div className="text-[#9fdd42]">button.onclick = () {'>'} alert('Hello!');</div>
           </div>
 
           {/* Actions */}
@@ -67,7 +67,7 @@ export default function JSMissionScene() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleFix}
-              className="w-full py-4 bg-gradient-to-r from-brand-blue to-brand-violet rounded-xl font-bold text-lg"
+              className="w-full py-4 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-xl font-bold text-lg text-white"
             >
               Fix JavaScript
             </motion.button>
@@ -80,13 +80,13 @@ export default function JSMissionScene() {
               className="text-center"
             >
               <div className="text-4xl mb-4">⚡</div>
-              <div className="text-brand-lime font-bold text-xl mb-2">+200 XP</div>
-              <div className="text-white mb-4">JavaScript Mission Complete!</div>
+              <div className="text-[#9fdd42] font-bold text-xl mb-2">+200 XP</div>
+              <div className="text-[#0b1740] mb-4">JavaScript Mission Complete!</div>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleComplete}
-                className="px-8 py-4 bg-gradient-to-r from-brand-blue to-brand-violet rounded-xl font-bold text-lg"
+                className="px-8 py-4 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-xl font-bold text-lg text-white"
               >
                 Continue
               </motion.button>

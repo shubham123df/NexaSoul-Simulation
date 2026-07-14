@@ -5,11 +5,11 @@ export default function IntroScene() {
   const setState = useSimulationStore((state) => state.setState)
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-ink relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-[#f7faff] relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-64 h-64 bg-brand-blue/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-violet/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-20 left-20 w-64 h-64 bg-[#315cf4]/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#7458f5]/20 rounded-full blur-3xl animate-pulse" />
       </div>
 
       <motion.div
@@ -31,7 +31,7 @@ export default function IntroScene() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-2xl md:text-3xl font-bold text-white mb-2"
+          className="text-2xl md:text-3xl font-bold text-[#0b1740] mb-2"
         >
           Frontend Developer Simulation
         </motion.h2>
@@ -40,7 +40,7 @@ export default function IntroScene() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-brand-sub text-lg mb-8"
+          className="text-[#5f6e8d] text-lg mb-8"
         >
           Can you become internship ready?
         </motion.p>
@@ -52,7 +52,7 @@ export default function IntroScene() {
           whileTap={{ scale: 0.95 }}
           transition={{ delay: 0.8, duration: 0.3 }}
           onClick={() => setState('AVATAR_SELECTION')}
-          className="px-8 py-4 bg-gradient-to-r from-brand-blue to-brand-violet rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-shadow"
+          className="px-8 py-4 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-shadow text-white"
         >
           Start Simulation
         </motion.button>

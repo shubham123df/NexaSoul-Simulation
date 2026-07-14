@@ -15,7 +15,7 @@ export default function GraduationScene() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-ink px-4 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-[#f7faff] px-4 relative overflow-hidden">
       {/* Confetti */}
       {showConfetti && (
         <div className="absolute inset-0 pointer-events-none">
@@ -62,7 +62,7 @@ export default function GraduationScene() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
-          className="text-xl text-white mb-8"
+          className="text-xl text-[#0b1740] mb-8"
         >
           You completed the NexaSoul Frontend Journey
         </motion.p>
@@ -72,24 +72,24 @@ export default function GraduationScene() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.9, duration: 0.8 }}
-          className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 mb-8"
+          className="bg-white backdrop-blur-lg rounded-2xl p-8 border border-[#dbe5fb] shadow-lg mb-8"
         >
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <div className="text-3xl font-bold text-brand-lime">{player.xp}</div>
-              <div className="text-brand-sub">Total XP</div>
+              <div className="text-3xl font-bold text-[#9fdd42]">{player.xp}</div>
+              <div className="text-[#5f6e8d]">Total XP</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-brand-cyan">{player.level}</div>
-              <div className="text-brand-sub">Level</div>
+              <div className="text-3xl font-bold text-[#04bfd5]">{player.level}</div>
+              <div className="text-[#5f6e8d]">Level</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-brand-blue">{player.projects.length}</div>
-              <div className="text-brand-sub">Projects</div>
+              <div className="text-3xl font-bold text-[#315cf4]">{player.projects.length}</div>
+              <div className="text-[#5f6e8d]">Projects</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-brand-violet">{player.badges.length}</div>
-              <div className="text-brand-sub">Badges</div>
+              <div className="text-3xl font-bold text-[#7458f5]">{player.badges.length}</div>
+              <div className="text-[#5f6e8d]">Badges</div>
             </div>
           </div>
         </motion.div>
@@ -101,7 +101,7 @@ export default function GraduationScene() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={handleContinue}
-          className="px-8 py-4 bg-gradient-to-r from-brand-blue to-brand-violet rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-shadow"
+          className="px-8 py-4 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-shadow text-white"
         >
           Become a NexaSoul Member
         </motion.button>

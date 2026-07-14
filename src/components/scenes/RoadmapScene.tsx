@@ -23,20 +23,20 @@ export default function RoadmapScene() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-ink px-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#f7faff] px-4">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="max-w-2xl w-full"
       >
-        <h2 className="text-3xl font-display font-bold text-center text-white mb-12">
+        <h2 className="text-3xl font-display font-bold text-center text-[#0b1740] mb-12">
           Your Journey
         </h2>
 
         {/* Roadmap */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-white/20" />
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#315cf4]/20" />
 
           {/* Skills */}
           <div className="space-y-8">
@@ -59,10 +59,10 @@ export default function RoadmapScene() {
                   {/* Node */}
                   <div className={`absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
                     isCompleted
-                      ? 'bg-brand-lime text-brand-ink'
+                      ? 'bg-[#9fdd42] text-[#0b1740]'
                       : isCurrent
-                      ? 'bg-brand-blue text-white animate-pulse'
-                      : 'bg-white/20 text-brand-sub'
+                      ? 'bg-[#315cf4] text-white animate-pulse'
+                      : 'bg-[#dbe5fb] text-[#5f6e8d]'
                   }`}>
                     {isCompleted ? '✓' : isLocked ? '🔒' : index + 1}
                   </div>
@@ -71,15 +71,15 @@ export default function RoadmapScene() {
                   <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
                     <div className={`p-4 rounded-xl ${
                       isCompleted
-                        ? 'bg-brand-lime/20 border border-brand-lime/50'
+                        ? 'bg-[#9fdd42]/20 border border-[#9fdd42]/50'
                         : isCurrent
-                        ? 'bg-brand-blue/20 border border-brand-blue/50'
-                        : 'bg-white/5 border border-white/10'
+                        ? 'bg-[#315cf4]/20 border border-[#315cf4]/50'
+                        : 'bg-white border border-[#dbe5fb]'
                     }`}>
-                      <div className="font-bold text-white">{skill.name}</div>
-                      {isCompleted && <div className="text-xs text-brand-lime mt-1">Completed</div>}
-                      {isCurrent && <div className="text-xs text-brand-cyan mt-1">Current Mission</div>}
-                      {isLocked && <div className="text-xs text-brand-sub mt-1">Locked</div>}
+                      <div className="font-bold text-[#0b1740]">{skill.name}</div>
+                      {isCompleted && <div className="text-xs text-[#9fdd42] mt-1">Completed</div>}
+                      {isCurrent && <div className="text-xs text-[#04bfd5] mt-1">Current Mission</div>}
+                      {isLocked && <div className="text-xs text-[#5f6e8d] mt-1">Locked</div>}
                     </div>
                   </div>
                 </motion.div>
@@ -99,7 +99,7 @@ export default function RoadmapScene() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={handleStartMission}
-            className="px-8 py-4 bg-gradient-to-r from-brand-blue to-brand-violet rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-shadow"
+            className="px-8 py-4 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-shadow text-white"
           >
             Start {skills[currentSkill].name} Mission
           </motion.button>

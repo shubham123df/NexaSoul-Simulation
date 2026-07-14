@@ -13,7 +13,7 @@ export default function LoadingScene() {
   }, [setState])
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-ink">
+    <div className="min-h-screen flex items-center justify-center bg-[#f7faff]">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -30,7 +30,7 @@ export default function LoadingScene() {
         <h1 className="text-3xl font-display font-bold text-gradient mb-2">
           NexaSoul
         </h1>
-        <p className="text-brand-sub">Loading simulation...</p>
+        <p className="text-[#5f6e8d]">Loading simulation...</p>
       </motion.div>
     </div>
   )

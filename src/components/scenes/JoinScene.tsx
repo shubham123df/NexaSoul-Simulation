@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function JoinScene() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-ink px-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#f7faff] px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -21,31 +21,31 @@ export default function JoinScene() {
           Ready to Join NexaSoul?
         </h1>
 
-        <p className="text-xl text-brand-sub mb-8">
+        <p className="text-xl text-[#5f6e8d] mb-8">
           Your simulation journey is just the beginning. Join the real NexaSoul community at Chandigarh University.
         </p>
 
-        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">What's Next:</h2>
-          <ul className="text-left space-y-3 text-brand-sub">
+        <div className="bg-white backdrop-blur-lg rounded-2xl p-8 border border-[#dbe5fb] shadow-lg mb-8">
+          <h2 className="text-2xl font-bold text-[#0b1740] mb-4">What's Next:</h2>
+          <ul className="text-left space-y-3 text-[#5f6e8d]">
             <li className="flex items-start gap-3">
-              <span className="text-brand-lime">✓</span>
+              <span className="text-[#9fdd42]">✓</span>
               <span>Join weekly learning sessions</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-brand-lime">✓</span>
+              <span className="text-[#9fdd42]">✓</span>
               <span>Participate in real hackathons</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-brand-lime">✓</span>
+              <span className="text-[#9fdd42]">✓</span>
               <span>Build projects with mentors</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-brand-lime">✓</span>
+              <span className="text-[#9fdd42]">✓</span>
               <span>Get internship preparation</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-brand-lime">✓</span>
+              <span className="text-[#9fdd42]">✓</span>
               <span>Become a leader and mentor others</span>
             </li>
           </ul>
@@ -57,12 +57,12 @@ export default function JoinScene() {
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-block px-8 py-4 bg-gradient-to-r from-brand-blue to-brand-violet rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-shadow"
+          className="inline-block px-8 py-4 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-shadow text-white"
         >
           Join WhatsApp Community
         </motion.a>
 
-        <div className="mt-8 text-brand-sub text-sm">
+        <div className="mt-8 text-[#5f6e8d] text-sm">
           <p>NexaSoul · Chandigarh University</p>
           <p className="mt-2">Code • Connect • Conquer</p>
         </div>

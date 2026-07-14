@@ -16,13 +16,13 @@ export default function AvatarSelectionScene() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-ink px-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#f7faff] px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="max-w-md w-full"
       >
-        <h2 className="text-3xl font-display font-bold text-center text-white mb-8">
+        <h2 className="text-3xl font-display font-bold text-center text-[#0b1740] mb-8">
           Choose Your Avatar
         </h2>
 
@@ -36,7 +36,7 @@ export default function AvatarSelectionScene() {
               onClick={() => setSelectedAvatar(avatar)}
               className={`text-6xl p-4 rounded-2xl transition-all ${
                 selectedAvatar === avatar
-                  ? 'bg-gradient-to-br from-brand-blue to-brand-violet scale-110'
+                  ? 'bg-gradient-to-br from-[#315cf4] to-[#7458f5] scale-110'
                   : 'bg-white/10 hover:bg-white/20'
               }`}
             >
@@ -52,7 +52,7 @@ export default function AvatarSelectionScene() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter your name"
-            className="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder-brand-sub focus:outline-none focus:border-brand-blue text-center text-lg"
+            className="w-full px-6 py-4 bg-white border border-[#dbe5fb] rounded-xl text-[#0b1740] placeholder-[#5f6e8d] focus:outline-none focus:border-[#315cf4] text-center text-lg"
             onKeyPress={(e) => e.key === 'Enter' && handleContinue()}
           />
         </div>
@@ -65,8 +65,8 @@ export default function AvatarSelectionScene() {
           disabled={!name.trim()}
           className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${
             name.trim()
-              ? 'bg-gradient-to-r from-brand-blue to-brand-violet hover:shadow-lg'
-              : 'bg-white/10 cursor-not-allowed'
+              ? 'bg-gradient-to-r from-[#315cf4] to-[#7458f5] hover:shadow-lg text-white'
+              : 'bg-white/10 cursor-not-allowed text-[#5f6e8d]'
           }`}
         >
           Continue
