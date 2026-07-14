@@ -53,13 +53,11 @@ export default function JoinScene() {
           >
             <h2 className="text-2xl font-bold text-[#0b1740] mb-4">Scan to Join</h2>
             <div className="bg-[#f7faff] p-6 rounded-xl mb-4">
-              <div className="w-48 h-48 bg-white rounded-lg flex items-center justify-center border-2 border-[#dbe5fb]">
-                <div className="text-center">
-                  <div className="text-6xl mb-2">📱</div>
-                  <div className="text-xs text-[#5f6e8d]">QR Code</div>
-                  <div className="text-xs text-[#5f6e8d]">Coming Soon</div>
-                </div>
-              </div>
+              <img 
+                src="/assets/qr-whatsapp.png" 
+                alt="WhatsApp QR Code" 
+                className="w-48 h-48 rounded-lg"
+              />
             </div>
             <p className="text-sm text-[#5f6e8d]">
               Scan with WhatsApp to join our community
