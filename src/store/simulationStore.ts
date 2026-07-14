@@ -15,7 +15,7 @@ export type SimulationState =
   | 'GRADUATION'
   | 'JOIN'
 
-export type Avatar = 'male' | 'female' | 'non-binary'
+export type Avatar = 'male' | 'female' | 'non-binary' | 'student' | 'explorer' | 'creative'
 
 export interface Skill {
   name: string

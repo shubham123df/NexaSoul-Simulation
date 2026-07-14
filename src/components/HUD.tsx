@@ -19,7 +19,7 @@ export default function HUD() {
     >
       <div className="flex items-center gap-3 mb-3">
         <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#315cf4] to-[#7458f5] flex items-center justify-center text-lg">
-          {player.avatar === 'male' ? '👨' : player.avatar === 'female' ? '👩' : '🧑'}
+          {player.avatar === 'male' ? '👨‍💻' : player.avatar === 'female' ? '👩‍💻' : player.avatar === 'non-binary' ? '🧑‍💻' : player.avatar === 'student' ? '🎓' : player.avatar === 'explorer' ? '🚀' : '🎨'}
         </div>
         <div>
           <div className="font-bold text-sm text-[#0b1740]">{player.name || 'Player'}</div>
