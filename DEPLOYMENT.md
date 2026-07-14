@@ -1,11 +1,11 @@
 # Render Deployment Instructions
 
-## Deploy NexaSoul Simulation to Render
+## Deploy NexaSoul Simulation to Render (Static Site)
 
 ### Step 1: Connect GitHub to Render
 1. Go to [render.com](https://render.com)
 2. Sign up/login with your GitHub account
-3. Click "New +" → "Web Service"
+3. Click "New +" → "Static Site"
 4. Select the `NexaSoul-Simulation` repository
 5. Render will detect it's a Vite project
 
@@ -27,13 +27,10 @@ dist
 npm install
 ```
 
-**Start Command:**
-```
-npm run preview
-```
+**No Start Command needed** (Static Site)
 
 ### Step 3: Deploy
-1. Click "Create Web Service"
+1. Click "Create Static Site"
 2. Wait for build to complete (~2-3 minutes)
 3. Your site will be live at: `https://nexasoul-simulation.onrender.com`
 
