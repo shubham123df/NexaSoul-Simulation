@@ -6,9 +6,6 @@ const avatars = [
   { id: 'male' as Avatar, emoji: '👨‍💻', label: 'Developer' },
   { id: 'female' as Avatar, emoji: '👩‍💻', label: 'Developer' },
   { id: 'non-binary' as Avatar, emoji: '🧑‍💻', label: 'Developer' },
-  { id: 'student' as Avatar, emoji: '🎓', label: 'Student' },
-  { id: 'explorer' as Avatar, emoji: '🚀', label: 'Explorer' },
-  { id: 'creative' as Avatar, emoji: '🎨', label: 'Creative' },
 ]
 
 export default function AvatarSelectionScene() {
@@ -43,7 +40,7 @@ export default function AvatarSelectionScene() {
         </motion.div>
 
         {/* Avatar Selection Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+        <div className="flex justify-center gap-6 mb-8">
           {avatars.map((avatar, index) => (
             <motion.button
               key={avatar.id}
