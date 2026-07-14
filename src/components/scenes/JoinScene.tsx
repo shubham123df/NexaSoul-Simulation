@@ -65,9 +65,21 @@ export default function JoinScene() {
           </motion.div>
         </div>
 
-        <div className="mt-8 text-[#5f6e8d] text-sm">
-          <p>NexaSoul · Chandigarh University</p>
-          <p className="mt-2">Code • Connect • Conquer</p>
+        <div className="mt-8 flex flex-col items-center gap-3">
+          <div className="flex items-center gap-4">
+            <img 
+              src="/assets/nexasoul-logo.png" 
+              alt="NexaSoul Logo" 
+              className="h-10 w-auto"
+            />
+            <span className="text-[#5f6e8d] text-lg">·</span>
+            <img 
+              src="/assets/cu-logo.png" 
+              alt="Chandigarh University Logo" 
+              className="h-7 w-auto"
+            />
+          </div>
+          <p className="text-[#5f6e8d] text-sm">Code • Connect • Conquer</p>
         </div>
       </motion.div>
     </div>
