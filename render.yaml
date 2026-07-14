@@ -1,0 +1,8 @@
+version: 1
+build:
+  command: npm run build
+  publish: dist
+root: dist
+routes:
+  - src: /*
+    status: 200
