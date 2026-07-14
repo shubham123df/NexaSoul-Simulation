@@ -79,7 +79,7 @@ export default function JSMissionScene() {
               animate={{ opacity: 1, y: 0 }}
               className="text-center"
             >
-              <div className="text-4xl mb-4">⚡</div>
+              <div className="text-4xl mb-4">💻</div>
               <div className="text-[#9fdd42] font-bold text-xl mb-2">+200 XP</div>
               <div className="text-[#0b1740] mb-4">JavaScript Mission Complete!</div>
               <motion.button

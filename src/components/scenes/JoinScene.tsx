@@ -8,15 +8,6 @@ export default function JoinScene() {
         animate={{ opacity: 1, scale: 1 }}
         className="max-w-3xl w-full text-center"
       >
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-          className="text-8xl mb-6"
-        >
-          ⚡
-        </motion.div>
-
         <h1 className="text-4xl md:text-5xl font-display font-bold text-gradient mb-4">
           Ready to Join NexaSoul?
         </h1>

@@ -36,28 +36,6 @@ export default function LoadingScene() {
         transition={{ duration: 0.8 }}
         className="text-center relative z-10"
       >
-        <div className="relative inline-block mb-6">
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-            className="text-7xl md:text-8xl"
-          >
-            ⚡
-          </motion.div>
-          <motion.div
-            animate={{
-              scale: [1, 1.2, 1],
-              opacity: [0.5, 1, 0.5],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="absolute -inset-4 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-full blur-2xl -z-10"
-          />
-        </div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

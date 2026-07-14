@@ -4,7 +4,7 @@ import { useSimulationStore } from '../../store/simulationStore'
 const missionDescriptions: Record<string, { icon: string; description: string; xp: string }> = {
   html: { icon: '🌐', description: 'Build your first webpage with HTML structure', xp: '+100 XP' },
   css: { icon: '🎨', description: 'Style your webpage with CSS', xp: '+150 XP' },
-  javascript: { icon: '⚡', description: 'Add interactivity with JavaScript', xp: '+200 XP' },
+  javascript: { icon: '💻', description: 'Add interactivity with JavaScript', xp: '+200 XP' },
   react: { icon: '⚛️', description: 'Build modern apps with React components', xp: '+250 XP' },
   git: { icon: '📦', description: 'Version control with Git', xp: '+100 XP' },
   projects: { icon: '🎨', description: 'Build real projects for your portfolio', xp: '+360 XP' },

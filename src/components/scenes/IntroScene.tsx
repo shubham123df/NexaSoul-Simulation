@@ -51,46 +51,10 @@ export default function IntroScene() {
         transition={{ duration: 0.8 }}
         className="relative z-10 text-center px-4 max-w-4xl"
       >
-        {/* Logo/Icon */}
-        <motion.div
-          initial={{ scale: 0, rotate: -180 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ delay: 0.2, type: "spring", stiffness: 200, damping: 15 }}
-          className="mb-8"
-        >
-          <div className="inline-block relative">
-            <motion.div
-              animate={{
-                rotate: [0, 360],
-              }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-              className="text-8xl md:text-9xl"
-            >
-              ⚡
-            </motion.div>
-            <motion.div
-              animate={{
-                scale: [1, 1.1, 1],
-                opacity: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="absolute -inset-4 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-full blur-2xl -z-10"
-            />
-          </div>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
           className="text-5xl md:text-7xl font-display font-bold text-gradient mb-4"
         >
           NexaSoul
@@ -122,7 +86,7 @@ export default function IntroScene() {
           transition={{ delay: 1, duration: 0.8 }}
           className="flex flex-wrap justify-center gap-3 mb-10"
         >
-          {['🌐 HTML', '🎨 CSS', '⚡ JavaScript', '⚛️ React', '📦 Git', '🏆 Hackathons'].map((feature, index) => (
+          {['🌐 HTML', '🎨 CSS', '💻 JavaScript', '⚛️ React', '📦 Git', '🏆 Hackathons'].map((feature, index) => (
             <motion.span
               key={feature}
               initial={{ opacity: 0, scale: 0.8 }}

@@ -47,7 +47,7 @@ export default function HackathonMissionScene() {
           {!accepted && !completed && (
             <div className="text-center">
               <div className="bg-gradient-to-br from-[#315cf4] to-[#7458f5] rounded-xl p-6 mb-6">
-                <div className="text-4xl mb-4">⚡</div>
+                <div className="text-4xl mb-4">🏆</div>
                 <div className="text-white font-bold text-xl mb-2">48-Hour Hackathon</div>
                 <div className="text-white/80">Challenge: Build a landing page</div>
               </div>
