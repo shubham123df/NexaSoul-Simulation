@@ -14,13 +14,19 @@ import InternshipScene from './components/scenes/InternshipScene'
 import GraduationScene from './components/scenes/GraduationScene'
 import JoinScene from './components/scenes/JoinScene'
 import HUD from './components/HUD'
+import SkipButton from './components/SkipButton'
+import FloatingQR from './components/FloatingQR'
+import { useIdleTimer } from './hooks/useIdleTimer'
 
 function App() {
   const currentState = useSimulationStore((state) => state.currentState)
+  useIdleTimer()
 
   return (
     <div className="min-h-screen bg-brand-ink overflow-hidden">
       <HUD />
+      <SkipButton />
+      <FloatingQR />
       <AnimatePresence mode="wait">
         {currentState === 'LOADING' && (
           <motion.div

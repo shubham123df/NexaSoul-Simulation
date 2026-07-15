@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useSimulationStore } from '../../store/simulationStore'
+import StatsRow from '../StatTicker'
 
 export default function IntroScene() {
   const setState = useSimulationStore((state) => state.setState)
@@ -79,11 +80,20 @@ export default function IntroScene() {
           Can you become internship ready?
         </motion.p>
 
-        {/* Feature Pills */}
+        {/* Stats Ticker */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
+        >
+          <StatsRow />
+        </motion.div>
+
+        {/* Feature Pills */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
           className="flex flex-wrap justify-center gap-3 mb-10"
         >
           {['🌐 HTML', '🎨 CSS', '💻 JavaScript', '⚛️ React', '📦 Git', '🏆 Hackathons'].map((feature, index) => (
@@ -91,7 +101,7 @@ export default function IntroScene() {
               key={feature}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1.1 + index * 0.1 }}
+              transition={{ delay: 1.3 + index * 0.1 }}
               className="px-4 py-2 bg-white border border-[#dbe5fb] rounded-full text-sm font-medium text-[#0b1740] shadow-sm"
             >
               {feature}
@@ -104,7 +114,7 @@ export default function IntroScene() {
           animate={{ opacity: 1, scale: 1 }}
           whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(49, 92, 244, 0.3)" }}
           whileTap={{ scale: 0.95 }}
-          transition={{ delay: 1.4, duration: 0.3 }}
+          transition={{ delay: 1.6, duration: 0.3 }}
           onClick={() => setState('AVATAR_SELECTION')}
           className="px-12 py-5 bg-gradient-to-r from-[#315cf4] to-[#7458f5] rounded-full font-bold text-lg md:text-xl shadow-lg hover:shadow-xl transition-all text-white"
         >
@@ -114,7 +124,7 @@ export default function IntroScene() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.6, duration: 0.8 }}
+          transition={{ delay: 1.8, duration: 0.8 }}
           className="mt-6 text-sm text-[#5f6e8d]"
         >
           Free • No Signup • Learn by Doing
